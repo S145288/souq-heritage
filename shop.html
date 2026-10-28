@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Souq Heritage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+    <div id="header">
+        <img src="images/LOGO.jpeg" alt="Souq Heritage logo" />
+        <h1>Souq Heritage</h1>
+        <p id="tagline">Authentic Omani crafts, directly from the artisans</p>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="login-register.html">Login/Register</a></li>
+            <li><a href="add-product.html">Add Product</a></li>
+            <li><a href="cart-checkout.html">Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h2>Shop Omani Products</h2>
+        <p class="center">Explore traditional Omani pottery, frankincense, silver and clothing.</p>
+
+        <h3>Search and Filter</h3>
+
+        <form action="https://httpbin.org/get" method="get">
+            <label for="search">Product name:</label>
+            <input type="text" id="search" name="product_name" />
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="all">All Products</option>
+                <option value="pottery">Pottery</option>
+                <option value="frankincense">Frankincense</option>
+                <option value="silver">Silver</option>
+                <option value="clothing">Clothing</option>
+            </select>
+
+            <label for="price">Maximum price:</label>
+            <select id="price" name="maximum_price">
+                <option value="all">Any Price</option>
+                <option value="10">OMR 10</option>
+                <option value="20">OMR 20</option>
+                <option value="30">OMR 30</option>
+            </select>
+
+            <p>
+                <input type="submit" value="Search" />
+                <input type="reset" value="Clear" />
+            </p>
+        </form>
+
+        <p><small>For Part II, this form sends the selected information to httpbin.org/get.
+        It does not filter products on this page yet.</small></p>
+
+        <h2>Our Products</h2>
+
+        <div class="category">
+            <img src="images/pottery-bahla.svg" alt="Bahla clay pot" />
+            <h3>Bahla Clay Pot</h3>
+            <p class="center">OMR 12.500</p>
+            <p class="center"><a href="product-details.html#pottery">View Details</a></p>
+        </div>
+
+        <div class="category">
+            <img src="images/frankincense-dhofar.svg" alt="Dhofar frankincense box" />
+            <h3>Frankincense Box</h3>
+            <p class="center">OMR 8.000</p>
+            <p class="center"><a href="product-details.html#frankincense">View Details</a></p>
+        </div>
+
+        <div class="category">
+            <img src="images/silver-pendant.svg" alt="Omani silver pendant" />
+            <h3>Silver Pendant</h3>
+            <p class="center">OMR 24.000</p>
+            <p class="center"><a href="product-details.html#silver">View Details</a></p>
+        </div>
+
+        <div class="category">
+            <img src="images/kumma-cap.svg" alt="Traditional Omani kumma" />
+            <h3>Omani Kumma</h3>
+            <p class="center">OMR 15.000</p>
+            <p class="center"><a href="product-details.html#kumma">View Details</a></p>
+        </div>
+
+        <p class="center"><a href="cart-checkout.html" class="button">View Sample Cart</a></p>
+        <p class="center"><small>Products and prices are examples for this class project.</small></p>
+    </div>
+
+    <div id="footer">
+        <p class="center">&copy; 2026 Souq Heritage - Sultan Qaboos University, COMP3700</p>
+        <p class="center">Email: <a href="mailto:souqheritage.team@gmail.com">souqheritage.team@gmail.com</a></p>
+        <p class="center">
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </div>
+
+</body>
+</html>
