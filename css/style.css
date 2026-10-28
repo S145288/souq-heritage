@@ -1,15 +1,7 @@
-/* ==========================================================
-   Souq Heritage - main external stylesheet (Member A)
-   Used by ALL pages: logo, menu, footer and basic layout
-   Change the colours below to match your logo.
-   ========================================================== */
-
-/* ---------- 1. UNIVERSAL SELECTOR ---------- */
 * {
     box-sizing: border-box;
 }
 
-/* ---------- 2. ELEMENT SELECTORS ---------- */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -26,11 +18,10 @@ p {
 }
 
 img {
-    max-width: 100%;      /* images never overflow on small screens */
+    max-width: 100%;     
     height: auto;
 }
 
-/* ---------- 3. GROUPING SELECTOR (one rule, several elements) ---------- */
 h1, h2, h3 {
     font-family: Georgia, "Times New Roman", serif;
     color: #7A1F1F;
@@ -41,7 +32,6 @@ h1 { font-size: 34px; }
 h2 { font-size: 26px; margin-top: 30px; }
 h3 { font-size: 20px; }
 
-/* ---------- 4. ID SELECTORS (header, nav, main, footer) ---------- */
 #header {
     background-color: #B5532E;
     color: white;
@@ -88,7 +78,6 @@ h3 { font-size: 20px; }
     margin-top: 30px;
 }
 
-/* ---------- 5. DESCENDANT SELECTORS (menu list) ---------- */
 #menu ul {
     list-style-type: none;
     margin: 0;
@@ -108,7 +97,6 @@ h3 { font-size: 20px; }
     font-weight: bold;
 }
 
-/* ---------- 6. LINK STATES (normal, visited, hover, active) ---------- */
 a:link {
     color: #B5532E;
 }
@@ -126,7 +114,6 @@ a:active {
     color: red;
 }
 
-/* the menu links need their own colours for each state */
 #menu ul li a:link,
 #menu ul li a:visited {
     color: white;
@@ -143,7 +130,6 @@ a:active {
     color: white;
 }
 
-/* the page you are currently on */
 #menu ul li a.active {
     background-color: #B5532E;
 }
@@ -157,7 +143,6 @@ a:active {
     color: white;
 }
 
-/* ---------- 7. CLASS SELECTORS (reusable by B and C) ---------- */
 .hero {
     text-align: center;
     background-color: #F6EFE6;
@@ -217,7 +202,6 @@ a.button:visited {
     text-align: center;
 }
 
-/* ---------- 8. LISTS ---------- */
 ul {
     list-style-type: square;
     padding-left: 30px;
@@ -228,7 +212,6 @@ ol {
     padding-left: 30px;
 }
 
-/* ---------- 9. PSEUDO-CLASS SELECTORS ---------- */
 li:first-child {
     font-weight: bold;
 }
@@ -237,14 +220,11 @@ tr:nth-child(even) td {
     background-color: #F6EFE6;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
+input:focus, textarea:focus, select:focus {
     background-color: #FFF8DC;
     border-color: #B5532E;
 }
 
-/* ---------- 10. TABLES ---------- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -264,7 +244,6 @@ td {
     text-align: center;
 }
 
-/* ---------- 11. FORMS ---------- */
 form {
     background-color: #F6EFE6;
     padding: 20px;
@@ -278,11 +257,7 @@ label {
     font-weight: bold;
 }
 
-/* ATTRIBUTE SELECTORS (select by the type of the input) */
-input[type="text"],
-input[type="email"],
-select,
-textarea {
+input[type="text"], input[type="email"], select, textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #7A1F1F;
@@ -310,7 +285,6 @@ input[type="reset"] {
     background-color: #7A7A7A;
 }
 
-/* ---------- 12. RESPONSIVE DESIGN (phones and small screens) ---------- */
 @media (max-width: 700px) {
     #menu ul li {
         display: block;
