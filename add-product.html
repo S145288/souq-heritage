@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Souq Heritage - Add Product</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div id="header">
+        <img src="images/LOGO.jpeg" alt="Souq Heritage logo" />
+        <h1>Souq Heritage</h1>
+        <p id="tagline">Authentic Omani crafts, directly from the artisans</p>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="login-register.html">Login/Register</a></li>
+            <li><a href="add-product.html" class="active">Add Product</a></li>
+            <li><a href="cart-checkout.html">Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h2 style="color: #7A1F1F;">Add Product Form</h2>
+        <p>Artisans can list new handcrafted products to the platform catalog.</p>
+
+        <form action="https://httpbin.org/get" method="get">
+            <label for="pname">Product Name:</label>
+            <input type="text" id="pname" name="pname" />
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" size="1">
+                 <option value="pottery">Pottery</option>
+                <option value="silver">Silver Jewellery</option>
+                <option value="Khanjar">Omani Khanjar</option>
+                <option value="clothes">Traditional clothing</option>
+            </select>
+
+            <label for="price">Price (OMR):</label>
+            <input type="text" id="price" name="price" size="10" />
+
+            <label for="description">Product Description:</label>
+            <textarea id="description" name="description" rows="3" cols="40">Enter item details...</textarea>
+
+            <div style="margin-top: 10px; padding: 8px; background-color: #fcf8e3;">
+                <span style="font-size: 12px; color: #8a6d3b;">Data will be processed for administrator review.</span>
+            </div>
+
+            <br />
+            <input type="submit" value="Submit Product" />
+            <input type="reset" value="Clear Form" />
+        </form>
+    </div>
+
+    <div id="footer">
+        <p class="center">&copy; 2026 Souq Heritage - Sultan Qaboos University, COMP3700</p>
+        <p class="center">Email: <a href="mailto:souqheritage.team@gmail.com">souqheritage.team@gmail.com</a></p>
+        <p class="center">
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </div>
+
+</body>
+</html>
