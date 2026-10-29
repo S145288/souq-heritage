@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart and Checkout - Souq Heritage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+
+    <div id="header">
+        <img src="images/LOGO.jpeg" alt="Souq Heritage logo" />
+        <h1>Souq Heritage</h1>
+        <p id="tagline">Authentic Omani crafts, directly from the artisans</p>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="login-register.html">Login/Register</a></li>
+            <li><a href="add-product.html">Add Product</a></li>
+            <li><a href="cart-checkout.html" class="active">Cart</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <h2>Cart and Checkout</h2>
+        <p class="center">Review this example order and complete the checkout form.</p>
+
+        <h3>Table 2: Order Summary</h3>
+
+        <div style="overflow-x: auto;">
+        <table border="1" cellpadding="8" cellspacing="0">
+            <tr>
+                <th colspan="5">Shopping Cart</th>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Omani Crafts</td>
+                <td>Bahla Clay Pot</td>
+                <td>1</td>
+                <td>OMR 12.500</td>
+                <td>OMR 12.500</td>
+            </tr>
+            <tr>
+                <td>Frankincense Box</td>
+                <td>1</td>
+                <td>OMR 8.000</td>
+                <td>OMR 8.000</td>
+            </tr>
+            <tr>
+                <td colspan="4">Subtotal</td>
+                <td>OMR 20.500</td>
+            </tr>
+            <tr>
+                <td colspan="4">Delivery</td>
+                <td>OMR 2.000</td>
+            </tr>
+            <tr>
+                <th colspan="4">Grand Total</th>
+                <th>OMR 22.500</th>
+            </tr>
+        </table>
+        </div>
+
+        <h3>Checkout Form</h3>
+        <p><small>Use example information only. The form does not create a real order.</small></p>
+
+        <form action="https://httpbin.org/get" method="get">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="full_name" required="required" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="required" />
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone_number" />
+
+            <label for="governorate">Governorate:</label>
+            <select id="governorate" name="governorate">
+                <option value="muscat">Muscat</option>
+                <option value="dhofar">Dhofar</option>
+                <option value="batinah">Al Batinah</option>
+                <option value="dakhiliyah">Al Dakhiliyah</option>
+            </select>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="delivery_address" rows="4" cols="35"></textarea>
+
+            <p><strong>Payment Method:</strong></p>
+            <p>
+                <label><input type="radio" name="payment" value="cash" checked="checked" /> Cash on Delivery</label>
+            </p>
+
+            <p>
+                <label><input type="checkbox" name="gift_wrap" value="yes" /> Gift wrapping</label>
+            </p>
+
+            <input type="hidden" name="sample_total_omr" value="22.500" />
+            <input type="submit" value="Place Sample Order" />
+            <input type="reset" value="Clear" />
+        </form>
+
+        <p class="center"><a href="shop.html">Continue Shopping</a></p>
+    </div>
+
+    <div id="footer">
+        <p class="center">&copy; 2026 Souq Heritage - Sultan Qaboos University, COMP3700</p>
+        <p class="center">Email: <a href="mailto:souqheritage.team@gmail.com">souqheritage.team@gmail.com</a></p>
+        <p class="center">
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </div>
+
+</body>
+</html>
